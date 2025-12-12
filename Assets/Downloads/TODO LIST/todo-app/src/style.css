@@ -1,0 +1,252 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+/* Container Utama */
+.app-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.main-title {
+  font-size: 42px;
+  color: #667eea;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.subtitle-text {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 16px 22px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+  border-color: #667eea;
+}
+
+/* Button Tambah */
+.button-add {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #667eea;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-add:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+}
+
+.button-add:active {
+  transform: translateY(0);
+}
+
+/* Error Message */
+.error-text {
+  color: #dc3545;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  min-height: 20px;
+}
+
+/* Action Bar */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.count-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+/* Button Clear All */
+.button-clear {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-clear:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.button-clear:active {
+  transform: translateY(0);
+}
+
+/* List Container */
+.list-container {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* Todo Item */
+.item-todo {
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.item-todo:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Todo Item Done */
+.item-todo.completed {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* Checkbox */
+.checkbox-todo {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* Todo Text */
+.text-todo {
+  flex: 1;
+  font-size: 17px;
+  color: #212529;
+  word-wrap: break-word;
+}
+
+.item-todo.completed .text-todo {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Delete Button */
+.button-delete {
+  width: 38px;
+  height: 38px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-delete:hover {
+  background-color: #ee5a52;
+  transform: rotate(90deg);
+}
+
+/* Empty State */
+.empty-message {
+  text-align: center;
+  padding: 70px 20px;
+  color: #adb5bd;
+  display: none;
+}
+
+.empty-message.visible {
+  display: block;
+}
+
+.empty-icon {
+  font-size: 70px;
+  margin-bottom: 18px;
+  opacity: 0.4;
+}
+
+.empty-message p {
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 30px 20px;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .button-add {
+    width: 100%;
+  }
+
+  .action-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button-clear {
+    width: 100%;
+  }
+}

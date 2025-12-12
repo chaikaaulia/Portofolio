@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-uas</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <section class="container">
+      <div class="input-group">
+        <input id="todoInput" type="text" placeholder="Tambah todo..." />
+        <button id="addBtn">Tambah</button>
+      </div>
+      <div class="input-group">
+        <input id="searchInput" type="text" placeholder="Cari todo..." />
+        <button id="clearAll">Hapus Semua</button>
+      </div>
+      <ul id="todoList"></ul>
+    </section>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

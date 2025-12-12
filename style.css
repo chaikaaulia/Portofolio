@@ -1,0 +1,342 @@
+/* ==== TAHAP AWAL ==== */
+* {
+  margin: 0; /* == Menghilangkan jarak luar (margin) == */
+  padding: 0; /* == Menghilangkan jarak dalam (padding) == */
+  box-sizing: border-box; /* == Agar ukuran elemen tetap sesuai yang kita atur == */
+}
+
+body {
+  font-family: "Bubblegum Sans", cursive; /* == Font yang di pakai == */
+  background-color: #e8d8c4; /* == Background yang di pakai untuk seluruh tampilan == */
+  color: #561c24; /* == Pewarnaan pada teks yang digunakan == */
+  scroll-behavior: smooth; /* == Untuk perpindahan halaman dari navbar ke tampilan yang di klik == */
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  width: 100%; /* == Membuat navbar menutupi seluruh lebar halaman. == */
+  padding: 15px 40px; /* == Membuat navbar terlihat lebih lega dan rapi. == */
+  background-color: #561c24;
+  display: flex; /* == Membuat logo dan menu berada dalam satu baris. == */
+  justify-content: space-between; /* == biar teksnya merata == */
+  align-items: center; /* == Meratakan (menyelaraskan) isi elemen secara vertikal di tengah == */
+  position: sticky; /* == agar navbar tetep stay walapun sudah di geser kesana dan keseini == */
+  top: 0; /* == Menempelkan elemen tepat di bagian paling atas halaman atau parent. == */
+  z-index: 99; /* == Mengatur urutan lapisan (layer) suatu elemen. == */
+  box-shadow: 0 4px 10px #00000026; /* == Ini membuat bayangan di belakang elemen. ==*/
+  color: #d7ccc8; /* == pewarnaan pada icon == */
+}
+
+.logo a {
+  font-size: 24px; /* == Mengatur ukuran teks == */
+  color: #d7ccc8; /* == warna apa teks chaika my == */
+  text-decoration: none; /* == Menghilangkan garis bawah default pada tag <a>. == */
+}
+
+.logo span {
+  color: #ffb805; /* == Ini mengatur styling untuk bagian teks yang dibungkus oleh <span> di dalam logo == */
+}
+
+.navbar-icon a:hover {
+  color: #ffb805; /* == merubah warna teks ketika di klik == */
+}
+
+.navbar-icon a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #d7ccc8; /* == warna pada teks di navbar == */
+  font-size: 18px;
+}
+
+.navbar-icon i {
+  margin-left: 15px; /* == Memberi jarak ke kiri sebesar == */
+  cursor: pointer; /* == Mengubah bentuk kursor menjadi tangan/klik saat diarahkan ke elemen. == */
+}
+
+/* ==== HOME SECTION ==== */
+#Home {
+  text-align: center; /* == Semua teks di dalam elemen #Home akan berada di tengah secara horizontal. == */
+  padding: 80px 20px 20px; /* == Padding memberi ruang di dalam elemen. == */
+}
+
+#Home h1 {
+  font-size: 40px; /* == besar kecilnya teks == */
+}
+
+#Home h3 {
+  font-size: 25px; /* == besar kecilnya teks == */
+  margin-top: 10px; /* == jarak ke atas sebesar 10px pada suatu elemen. == */
+}
+
+/* ==== GET STARTED ==== */
+
+.get-started {
+  display: block; /* == Mengubah elemen (biasanya <a>) menjadi block element, == */
+  width: 180px; /* == Menentukan lebar tombol menjadi 180px agar ukurannya konsisten. == */
+  margin: 20px auto; /* == Tombol jadi tengah di layar == */
+  padding: 12px; /* == Memberi jarak dalam tombol (atas–bawah–kiri–kanan).
+Tombol jadi lebih besar dan nyaman diklik. == */
+  background-color: #a47551; /* == memberikan warna pada background == */
+  color: #fff; /* == mmeberikan wrna pada teks di dalamnnya == */
+  text-align: center; /* == biar teks bisa di tengah semua == */
+  font-size: 18px; /* == besar kecilnya sebuah teks == */
+  border-radius: 10px; /* == biar runcing di pinggir pinggrirannya == */
+  text-decoration: none; /* == untuk menghilangkan garis bawah == */
+  transition: 0.3s; /* == memberikan animasi halus saat merubah warna == */
+}
+
+.get-started:hover {
+  background-color: #7e573d; /* == warna pada card tersebut ==*/
+}
+
+/* ==== ABOUT SECTION ==== */
+#About h1 {
+  font-size: 35px; /* == menentukan size untuk teks == */
+  text-align: center; /* == Mengatur posisi vertikal (cross-axis) sehingga elemen-elemen di dalamnya rata tengah secara vertikal == */
+  margin-top: 60px; /* == untuk memberi jarak ke atas == */
+}
+
+#AboutMe1 {
+  padding: 40px; /* == Memberi jarak di dalam elemen == */
+  display: flex; /* == Mengubah elemen menjadi flex container == */
+  justify-content: center; /* == Mengatur posisi horizontal elemen-elemen di dalamnya == */
+  align-items: center; /* == Mengatur posisi vertikal (cross-axis) sehingga elemen-elemen di dalamnya rata tengah secara vertikal == */
+  gap: 30px; /* == Mengatur jarak antar elemen di dalam flex container == */
+  flex-wrap: wrap; /* == Mengizinkan elemen di dalamnya pindah ke baris baru jika tidak muat dalam satu baris == */
+}
+
+#AboutMe1 img {
+  width: 230px; /* == Boleh memenuhi wadah == */
+  height: 230px; /* == mengatur tinggi suatu elemen == */
+  background: #d7ccc8;
+  border-radius: 15px; /* == biar ga lancip == */
+  object-fit: cover; /* == Biar foto tetap rapi tanpa gepeng == */
+  object-position: center; /* == nentuin bagian foto yang mana yang ingin di tampilkan == */
+}
+
+#AboutMe1 h1 {
+  width: 600px; /* == lebar elemen == */
+  font-size: 20px; /* == untuk merubah gede atau kecilnya suatu font == */
+  color: #4e342e; /* == warna pada suatu font == */
+  line-height: 1.6; /* == jarak antar baris dibuat lebih longgar == */
+  text-align: justify; /* == Agar teks menjadi rata / mengatur posisi teks == */
+}
+
+/* ==== MY SKILL ==== */
+#MySkill h1 {
+  font-size: 35px; /* == besar kecilnya sebuah teks == */
+  text-align: center; /* == biar semua teks berada di tengah == */
+  margin-top: 60px; /* == memberi jarak ke atas == */
+}
+
+.MySkill2 {
+  margin: 30px auto; /* == memberi jarak ke atas == */
+  display: grid; /* == Mengubah elemen menjadi grid container, sehingga semua elemen di dalamnya otomatis tersusun dalam grid. == */
+  width: 90%; /* == Mengatur lebar container menjadi 90% dari layar/parent-nya. == */
+  gap: 20px; /* == Memberi jarak antar elemen grid sebesar 20px == */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr) /* == membuat layout yang otomatis responsif tanpa media query. == */
+  ); /* == Properti ini membuat grid responsif otomatis tanpa media query. == */
+}
+
+.MySkill-kartunya {
+  background: #f5ede2; /* == memberi warna pada bakround == */
+  padding: 20px; /* == memberi jarak di dlam element == */
+  border-radius: 12px; /* == agar tidak lancip == */
+  text-align: center; /* == untuk mengatur posisi vertikal == */
+  box-shadow: 0 4px 10px #00000026; /* == untuk membuat bayangan == */
+}
+
+.MySkill-kartunya img {
+  width: 80px; /* == mengatur lebar img == */
+  height: 80px; /* == mengatur suatu element == */
+  background: #d7ccc8; /* == warna biar pas ada border radius nya warnannya nambung == */
+  border-radius: 10px; /* == biar tida lancip == */
+}
+
+.MySkill-kartunya h3 {
+  font-size: 20px; /* == besar kecilnya suatu teks == */
+  margin: 10px 0 5px; /* == menghilankan jarak luar == */
+}
+
+.MySkill-kartunya p {
+  font-size: 15px; /* == besar kecilnya suatu teks == */
+  color: #5d4037; /* == warna bia teksnya sama dengan warna yang lain == */
+  text-align: justify; /* == biar teksnya rata == */
+}
+
+/* ==== MY PROJECT ==== */
+#MyProject h1 {
+  font-size: 35px; /* == besar kecilnya suatu teks == */
+  text-align: center; /* == biar teksnya ketengah == */
+  margin-top: 60px; /* == memberi jarak keatas == */
+}
+
+.MyProject2 {
+  margin: 30px auto; /* == menghilangkan jarak luar == */
+  display: grid; /* == Mengubah elemen menjadi grid container, sehingga semua elemen di dalamnya otomatis tersusun dalam grid. == */
+  width: 90%; /* == mengatur lebar card nya == */
+  gap: 20px; /* == mengatur jarak antar element == */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* == membuat layout yang otomatis responsif tanpa media query. == */
+}
+
+.MyProject-kartunya {
+  background: #f5ede2; /* == mengatur warna backround card == */
+  padding: 20px; /* == memberi jarak di dalam element == */
+  border-radius: 12px; /* == biar ga lancip == */
+  text-align: center; /* == untuk meratakan teks kebagian tengah == */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* == membuat bayangan di belakang element == */
+}
+
+.MyProject-kartunya img {
+  width: 80px;
+  height: 80px;
+  background: #d7ccc8; /* == untuk warna background == */
+  border-radius: 10px; /* == biar ga lancip di bagian fotonya == */
+  object-fit: contain; /* == biar dia ga gepeng dan nyesuaian sama ukuran foto yang sebenernya == */
+}
+
+.MyProject-kartunya h3 {
+  font-size: 20px; /* == buat nentuin teks nya yang dalam heading == */
+  margin: 10px 0 5px; /* == */
+}
+
+.MyProject-kartunya p {
+  font-size: 15px; /* == untuk teks yang ada di paragraf == */
+  color: #5d4037; /* == warna teks untuk di paragraf == */
+  text-align: justify; /* == Mengatur teks agar rapih / mengatur posisi teks == */
+}
+
+/* ==== RUANG INPUT ==== */
+/* ====== Container ====== */
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #561c24, #8d3541);
+  padding: 20px;
+}
+
+/* ====== Card Form ====== */
+.contact-left {
+  width: 420px; /* == Biar card yang ada di form input nya gede == */
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.7s ease;
+}
+
+/* ====== Title ====== */
+.contact-left-title h2 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ====== Input Styling ====== */
+.contact-input {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #ffffffa6;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect input */
+.contact-input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(86, 28, 36, 0.25);
+}
+
+/* Textarea tinggi */
+textarea.contact-input {
+  height: 120px;
+  resize: none;
+}
+
+/* ====== Button Modern ====== */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  background: #561c24;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+/* Hover */
+button:hover {
+  background: #8d3541;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active (klik) */
+button:active {
+  transform: scale(0.98);
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #e8d8c4;
+  color: #561c24;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h3.footer-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #fbf3d5;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  #AboutMe1 h1 {
+    width: 90%;
+  }
+}

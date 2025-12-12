@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>To Do List App</h1>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add new task...">
+      <input type="date" id="dateInput">
+      <button id="addBtn">Add</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <p id="error"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Modify</th>
+        </tr>
+      </thead>
+      <tbody id="todoBody"></tbody>
+    </table>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

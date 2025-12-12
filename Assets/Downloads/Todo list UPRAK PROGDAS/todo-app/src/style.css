@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #1c3f78;
+}
+
+/* ✅ INPUT KE SAMPING */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#taskInput {
+  flex: 2;
+}
+
+#dateInput {
+  flex: 1;
+}
+
+button {
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#addBtn {
+  background: #1c3f78;
+}
+
+#clearBtn {
+  background: #1c3f78;
+}
+
+/* ✅ TABEL */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background: #1c3f78;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.selesai {
+  color: green;
+  font-weight: bold;
+}
+
+.belum {
+  color: red;
+  font-weight: bold;
+}
+
+.btn-selesai {
+  background: #4caf50;
+}
+
+.btn-hapus {
+  background: #1c3f78;
+}
+
+#error {
+  color: red;
+  margin-top: 5px;
+}

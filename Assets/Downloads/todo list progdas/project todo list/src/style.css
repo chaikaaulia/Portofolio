@@ -1,0 +1,126 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ===== INPUT GROUP ===== */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #4b7bec;
+}
+
+.input-group button {
+  padding: 12px 18px;
+  background: #0840c2;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.input-group button:hover {
+  background: #3867d6;
+}
+
+/* ===== TODO LIST ===== */
+#todoList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.todo-item {
+  background: #f0f3ff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #4b7bec;
+}
+
+.todo-item.completed {
+  background: #d4ffdc;
+  text-decoration: line-through;
+  border-left-color: #20bf6b;
+}
+
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* ===== BUTTONS FOR EACH TODO ===== */
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #fed330;
+}
+
+.delete-btn {
+  background: #eb3b5a;
+  color: white;
+}
+
+.save-btn {
+  background: #20bf6b;
+  color: white;
+}
+
+/* Hover */
+.edit-btn:hover { background: #f7b731; }
+.delete-btn:hover { background: #fa163f; }
+.save-btn:hover  { background: #0fb665; }

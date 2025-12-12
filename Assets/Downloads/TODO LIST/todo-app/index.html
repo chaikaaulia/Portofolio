@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Todo List</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="header-section">
+      <h1 class="main-title">✨ Todo List Saya</h1>
+      <p class="subtitle-text">Kelola aktivitas harian dengan mudah</p>
+    </div>
+
+    <div class="input-area">
+      <input 
+        type="text" 
+        id="todoInput" 
+        class="todo-input" 
+        placeholder="Masukkan tugas baru..."
+      />
+      <button id="addBtn" class="button-add">Tambah</button>
+    </div>
+
+    <div id="errorMsg" class="error-text"></div>
+
+    <div class="action-bar">
+      <span id="countDisplay" class="count-text">0 tugas</span>
+      <button id="clearAllBtn" class="button-clear">Hapus Semua</button>
+    </div>
+
+    <ul id="todoListContainer" class="list-container"></ul>
+
+    <div id="emptyDisplay" class="empty-message">
+      <div class="empty-icon">📝</div>
+      <p>Belum ada tugas. Tambahkan sekarang!</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
