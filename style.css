@@ -134,6 +134,7 @@ Tombol jadi lebih besar dan nyaman diklik. == */
   display: grid; /* == Mengubah elemen menjadi grid container, sehingga semua elemen di dalamnya otomatis tersusun dalam grid. == */
   width: 90%; /* == Mengatur lebar container menjadi 90% dari layar/parent-nya. == */
   gap: 20px; /* == Memberi jarak antar elemen grid sebesar 20px == */
+  flex-direction: column;
   grid-template-columns: repeat(
     auto-fit,
     minmax(220px, 1fr)
@@ -147,6 +148,7 @@ Tombol jadi lebih besar dan nyaman diklik. == */
   border-radius: 12px; /* == agar tidak lancip == */
   text-align: center; /* == untuk mengatur posisi vertikal == */
   box-shadow: 0 4px 10px #00000026; /* == untuk membuat bayangan == */
+  
 }
 
 .MySkill-kartunya img {
