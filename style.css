@@ -136,7 +136,8 @@ Tombol jadi lebih besar dan nyaman diklik. == */
   gap: 20px; /* == Memberi jarak antar elemen grid sebesar 20px == */
   grid-template-columns: repeat(
     auto-fit,
-    minmax(220px, 1fr) /* == membuat layout yang otomatis responsif tanpa media query. == */
+    minmax(220px, 1fr)
+      /* == membuat layout yang otomatis responsif tanpa media query. == */
   ); /* == Properti ini membuat grid responsif otomatis tanpa media query. == */
 }
 
@@ -178,7 +179,10 @@ Tombol jadi lebih besar dan nyaman diklik. == */
   display: grid; /* == Mengubah elemen menjadi grid container, sehingga semua elemen di dalamnya otomatis tersusun dalam grid. == */
   width: 90%; /* == mengatur lebar card nya == */
   gap: 20px; /* == mengatur jarak antar element == */
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* == membuat layout yang otomatis responsif tanpa media query. == */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  ); /* == membuat layout yang otomatis responsif tanpa media query. == */
 }
 
 .MyProject-kartunya {
@@ -190,8 +194,8 @@ Tombol jadi lebih besar dan nyaman diklik. == */
 }
 
 .MyProject-kartunya img {
-  width: 80px;
-  height: 80px;
+  width: 80px; /* == lebar == */
+  height: 80px; /* == tinggi == */
   background: #d7ccc8; /* == untuk warna background == */
   border-radius: 10px; /* == biar ga lancip di bagian fotonya == */
   object-fit: contain; /* == biar dia ga gepeng dan nyesuaian sama ukuran foto yang sebenernya == */
@@ -199,7 +203,7 @@ Tombol jadi lebih besar dan nyaman diklik. == */
 
 .MyProject-kartunya h3 {
   font-size: 20px; /* == buat nentuin teks nya yang dalam heading == */
-  margin: 10px 0 5px; /* == */
+  margin: 10px 0 5px; /* == menghilangkan jarak luar ==  */
 }
 
 .MyProject-kartunya p {
@@ -211,26 +215,26 @@ Tombol jadi lebih besar dan nyaman diklik. == */
 /* ==== RUANG INPUT ==== */
 /* ====== Container ====== */
 .contact-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #561c24, #8d3541);
-  padding: 20px;
+  width: 100%; /* == Membuat elemen memiliki lebar penuh mengikuti ukuran layar == */
+  min-height: 100vh; /* == Membuat tinggi elemen minimal 100% tinggi layar == */
+  display: flex; /* == berjajar horizontal secara default == */
+  justify-content: center; /* == Mengatur posisi elemen-anak secara horizontal, diratakan ke tengah. == */
+  align-items: center; /* == Mengatur posisi elemen-anak secara vertikal, diratakan ke tengah. == */
+  background: linear-gradient(135deg, #561c24, #8d3541); /* == Memberikan background gradasi diagonal (135°) dari warna #561c24 ke #8d3541. == */
+  padding: 20px; /* == Memberikan jarak 20px ke semua sisi dalam elemen == */
 }
 
 /* ====== Card Form ====== */
 .contact-left {
   width: 420px; /* == Biar card yang ada di form input nya gede == */
-  background: rgba(255, 255, 255, 0.15);
-  padding: 35px 30px;
-  border-radius: 20px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  animation: fadeIn 0.7s ease;
+  background: rgba(255, 255, 255, 0.15); /* == Memberi background putih transparan == */
+  padding: 35px 30px; /* == Memberi jarak dalam card == */
+  border-radius: 20px; /* == biar ga lancip == */
+  backdrop-filter: blur(12px); /* == Efek blur kaca pada background di belakang card (glassmorphism). == */
+  -webkit-backdrop-filter: blur(12px); /* == Versi Safari/iPhone dari backdrop-filter. Biar efek glass tetap muncul di Safari. == */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* == Memberikan border putih tipis transparan. Ini membuat card makin terlihat seperti kaca. == */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* == membuat bayangan di belakang element == */
+  animation: fadeIn 0.7s ease; /* == Memberikan animasi muncul halus selama 0.7 detik ketika card muncul. == */
 }
 
 /* ====== Title ====== */
@@ -239,7 +243,7 @@ Tombol jadi lebih besar dan nyaman diklik. == */
   color: #ffffff;
   margin-bottom: 20px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1px; /* == mengatur jarak antar huruf == */
 }
 
 /* ====== Input Styling ====== */
@@ -258,13 +262,13 @@ Tombol jadi lebih besar dan nyaman diklik. == */
 /* Focus effect input */
 .contact-input:focus {
   background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(86, 28, 36, 0.25);
+  box-shadow: 0 0 0 3px rgba(86, 28, 36, 0.25); /* == memberi efek ketika input sedang aktif / diklik / sedang mengetik == */
 }
 
 /* Textarea tinggi */
 textarea.contact-input {
-  height: 120px;
-  resize: none;
+  height: 120px; /* == Mengatur tinggi textarea menjadi 120px. == */
+  resize: none; /* == Menonaktifkan fitur drag / tarik untuk memperbesar textarea. == */
 }
 
 /* ====== Button Modern ====== */
@@ -283,9 +287,9 @@ button {
 
 /* Hover */
 button:hover {
-  background: #8d3541;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  background: #8d3541; /* == background untuk card == */
+  transform: translateY(-2px); /* == menggeser elemen ke atas 2px, biasanya untuk animasi hover agar terasa hidup. == */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* == membuat*/
 }
 
 /* Button active (klik) */
@@ -299,7 +303,8 @@ footer {
   color: #561c24;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 35px;
+  margin: 2px;
 }
 
 h3.footer-title {
@@ -315,7 +320,11 @@ h3.footer-title {
 }
 
 .social-link {
-  color: #fbf3d5;
+  color: #561c24;
+}
+
+.social-links a:hover {
+  color: #ffb805;
 }
 
 /* Fade animation */
